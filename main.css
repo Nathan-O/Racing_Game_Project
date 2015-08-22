@@ -4,7 +4,6 @@
 
 body {
 	background-color: lightgrey;
-	margin: 4% auto;
 }
 
 .header {
@@ -27,7 +26,8 @@ body {
 
 h1 {
 	font-size: 80px;
-	margin-left: 60px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	text-align: center;
 	font-family: monospace;
 }
@@ -125,26 +125,26 @@ button {
 
 .container {
 	width: 800px;
-	height: 900px;
+	height: 485px;
 	margin: 0px auto;
 	padding: 15px;
 	border: 5px white dashed;
 }
 
 .gameboard {
-	height: 850px;
+	height: 445px;
 	width: 750px;
-	background-color: rgba(0, 0, 0);
+	background-color: rgba(0, 145, 10, .75);
 	/* top-left | top-right | bottom-right | bottom-left */
 	border-radius: 10px 10px 10px 10px;
 	margin: auto;
 	padding: 15px;
-	border: 3px green solid;
+	border: 5px green solid;
 }
 
 .track {
-
-	border: 5px red dashed;
+	background-color: black;
+	border: 5px grey solid;
 	height: 30px;
 	width: 675px;
 
@@ -161,6 +161,7 @@ button {
     float: right;
     border-top: 0px;
     border-bottom: 0px;
+    border-left: 5px white dashed;
 }
 
 #p1LegThree {
@@ -174,6 +175,7 @@ button {
 #p1LegFour {
 	width: 30px;
     height: 110px;
+    border-left: 5px white dashed;
     border-top: 0px;
     border-bottom: 0px;
     margin-left: 35px;
@@ -204,6 +206,7 @@ button {
 	float: right;
 	border-right: 0px;
 	border-left: 0px;
+	border-bottom: 5px white dashed;
     width: 600px;
     margin-top: 110px;
 }
@@ -227,26 +230,34 @@ button {
 	height: 65px;
 	width: 65px;
 	position: relative;
-	border: 5px blue dashed;
+	border: 5px grey solid;
 }
 
 #firstTurn {
 	float: right;
 	margin-top: -75px;
+	border-left: 5px white solid;
+	border-bottom: 5px white solid;
+
 }
 
 #secondTurn {
 	float: right;
     margin-top: 110px;
     margin-right: -75px;
+    border-top: 5px white solid;
+    border-left: 5px white solid;
 }
 
 #thirdTurn {
 	margin-top: 110px;
+	border-right: 5px white solid;
+	border-bottom: 5px white solid;
 }
 
 #fourthTurn {
-
+	border-top: 5px white solid;
+	border-right: 5px white solid;
 }
 
 div.turn {
