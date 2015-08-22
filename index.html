@@ -1,3 +1,12 @@
+<!--
+////////////////////////////////////////////////////////////
+
+                          Dot.
+                          HTML
+
+////////////////////////////////////////////////////////////
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +15,7 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Hey, where's the jquery? -->
   <script type="text/javascript" src="app.js"></script>
 </head>
@@ -13,6 +23,281 @@
   <!-- HTML Body -->
   <h1>Rrrracing Game</h1>
   <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
+  <div class="container">
+
+    <div class="gameboard">
+
+      <div class="track" id="p1LegOne">
+        <div class="road start" id="pOneStart"></div>
+        <div class="road horz" id="a1"></div> 
+        <div class="road horz" id="a2"></div> 
+        <div class="road horz" id="a3"></div> 
+        <div class="road horz" id="a4"></div> 
+        <div class="road horz" id="a5"></div> 
+        <div class="road horz" id="a6"></div> 
+        <div class="road horz" id="a7"></div> 
+        <div class="road horz" id="a8"></div> 
+        <div class="road horz" id="a9"></div> 
+        <div class="road horz" id="a10"></div> 
+        <div class="road horz" id="a11"></div> 
+        <div class="road horz" id="a12"></div> 
+        <div class="road horz" id="a13"></div> 
+        <div class="road horz" id="a14"></div> 
+        <div class="road horz" id="a15"></div> 
+        <div class="road horz" id="a16"></div> 
+        <div class="road horz" id="a17"></div> 
+        <div class="road horz" id="a18"></div> 
+        <div class="road horz" id="a19"></div> 
+        <div class="road horz" id="a20"></div> 
+        <div class="road horz" id="a21"></div>
+        <div class="road horz" id="a22"></div> 
+        <div class="road horz" id="a23"></div> 
+        <div class="road horz" id="a24"></div> 
+        <div class="road horz" id="a25"></div> 
+        <div class="road horz" id="a26"></div> 
+        <div class="road horz" id="a27"></div> 
+        <div class="road horz" id="a28"></div> 
+        <div class="road horz" id="a29"></div> 
+        <div class="road horz" id="a30"></div> 
+        <div class="road horz" id="a31"></div> 
+        <div class="road horz" id="a32"></div>  
+      </div>
+
+      <div class="track" id="p2LegOne">
+        <div class="road start" id="pTwoStart"></div>
+        <div class="road horz" id="b1"></div> 
+        <div class="road horz" id="b2"></div> 
+        <div class="road horz" id="b3"></div> 
+        <div class="road horz" id="b4"></div> 
+        <div class="road horz" id="b5"></div> 
+        <div class="road horz" id="b6"></div> 
+        <div class="road horz" id="b7"></div> 
+        <div class="road horz" id="b8"></div> 
+        <div class="road horz" id="b9"></div> 
+        <div class="road horz" id="b10"></div> 
+        <div class="road horz" id="b11"></div> 
+        <div class="road horz" id="b12"></div> 
+        <div class="road horz" id="b13"></div> 
+        <div class="road horz" id="b14"></div> 
+        <div class="road horz" id="b15"></div> 
+        <div class="road horz" id="b16"></div> 
+        <div class="road horz" id="b17"></div> 
+        <div class="road horz" id="b18"></div> 
+        <div class="road horz" id="b19"></div> 
+        <div class="road horz" id="b20"></div> 
+        <div class="road horz" id="b21"></div>
+        <div class="road horz" id="b22"></div> 
+        <div class="road horz" id="b23"></div> 
+        <div class="road horz" id="b24"></div> 
+        <div class="road horz" id="b25"></div> 
+        <div class="road horz" id="b26"></div> 
+        <div class="road horz" id="b27"></div> 
+        <div class="road horz" id="b28"></div> 
+        <div class="road horz" id="b29"></div> 
+        <div class="road horz" id="b30"></div> 
+        <div class="road horz" id="b31"></div> 
+        <div class="road horz" id="b32"></div>  
+      </div>
+
+      <div class="track corner" id="firstTurn">
+        <div class="road turn" id="a33"></div>
+        <div class="road turn" id="a34"></div>
+        <div class="road turn" id="b33"></div>
+        <div class="road turn" id="a35"></div>
+      </div>
+
+      <div class="track" id="p1LegTwo">
+        <div class="road vert" id="a36"></div> 
+        <div class="road vert" id="a37"></div> 
+        <div class="road vert" id="a38"></div> 
+        <div class="road vert" id="a39"></div> 
+      </div>
+
+      <div class="track" id="p2LegTwo">
+        <div class="road vert" id="b34"></div> 
+        <div class="road vert" id="b35"></div> 
+        <div class="road vert" id="b36"></div> 
+        <div class="road vert" id="b37"></div>
+      </div>
+
+      <div class="track corner" id="secondTurn">
+        <div class="road turn" id="b38"></div>
+        <div class="road turn" id="a40"></div>
+        <div class="road turn" id="a41"></div>
+        <div class="road turn" id="a42"></div>
+      </div>
+
+      <div class="track" id="p2LegThree">
+        <div class="road horz mid" id="b68"></div> 
+        <div class="road horz mid" id="b67"></div> 
+        <div class="road horz mid" id="b66"></div> 
+        <div class="road horz mid" id="b65"></div> 
+        <div class="road horz mid" id="b64"></div> 
+        <div class="road horz mid" id="b63"></div> 
+        <div class="road horz mid" id="b62"></div> 
+        <div class="road horz mid" id="b61"></div> 
+        <div class="road horz mid" id="b60"></div> 
+        <div class="road horz mid" id="b59"></div> 
+        <div class="road horz mid" id="b58"></div> 
+        <div class="road horz mid" id="b57"></div> 
+        <div class="road horz mid" id="b56"></div> 
+        <div class="road horz mid" id="b55"></div> 
+        <div class="road horz mid" id="b54"></div> 
+        <div class="road horz mid" id="b53"></div> 
+        <div class="road horz mid" id="b52"></div> 
+        <div class="road horz mid" id="b51"></div> 
+        <div class="road horz mid" id="b50"></div> 
+        <div class="road horz mid" id="b49"></div> 
+        <div class="road horz mid" id="b48"></div>
+        <div class="road horz mid" id="b47"></div> 
+        <div class="road horz mid" id="b46"></div> 
+        <div class="road horz mid" id="b45"></div> 
+        <div class="road horz mid" id="b44"></div> 
+        <div class="road horz mid" id="b43"></div> 
+        <div class="road horz mid" id="b42"></div> 
+        <div class="road horz mid" id="b41"></div> 
+        <div class="road horz mid" id="b40"></div> 
+        <div class="road horz mid" id="b39"></div> 
+      </div>
+
+      <div class="track" id="p1LegThree">
+        <div class="road horz mid" id="a72"></div> 
+        <div class="road horz mid" id="a71"></div> 
+        <div class="road horz mid" id="a70"></div> 
+        <div class="road horz mid" id="a69"></div> 
+        <div class="road horz mid" id="a68"></div> 
+        <div class="road horz mid" id="a67"></div> 
+        <div class="road horz mid" id="a66"></div> 
+        <div class="road horz mid" id="a65"></div> 
+        <div class="road horz mid" id="a64"></div> 
+        <div class="road horz mid" id="a63"></div> 
+        <div class="road horz mid" id="a62"></div> 
+        <div class="road horz mid" id="a61"></div> 
+        <div class="road horz mid" id="a60"></div> 
+        <div class="road horz mid" id="a59"></div> 
+        <div class="road horz mid" id="a58"></div> 
+        <div class="road horz mid" id="a57"></div> 
+        <div class="road horz mid" id="a56"></div> 
+        <div class="road horz mid" id="a55"></div> 
+        <div class="road horz mid" id="a54"></div> 
+        <div class="road horz mid" id="a53"></div> 
+        <div class="road horz mid" id="a52"></div>
+        <div class="road horz mid" id="a51"></div> 
+        <div class="road horz mid" id="a50"></div> 
+        <div class="road horz mid" id="a49"></div> 
+        <div class="road horz mid" id="a48"></div> 
+        <div class="road horz mid" id="a47"></div> 
+        <div class="road horz mid" id="a46"></div> 
+        <div class="road horz mid" id="a45"></div> 
+        <div class="road horz mid" id="a44"></div> 
+        <div class="road horz mid" id="a43"></div> 
+      </div>
+
+      <div class="track corner" id="thirdTurn">
+        <div class="road turn" id="70"></div>
+        <div class="road turn" id="b69"></div>
+        <div class="road turn" id="b71"></div>
+        <div class="road turn" id="a73"></div>
+      </div>
+
+      <div class="track" id="p1LegFour">
+        <div class="road vert" id="a74"></div> 
+        <div class="road vert" id="a75"></div> 
+        <div class="road vert" id="a76"></div> 
+        <div class="road vert" id="a77"></div> 
+      </div>
+
+      <div class="track" id="p2LegFour">
+        <div class="road vert" id="b72"></div> 
+        <div class="road vert" id="b73"></div> 
+        <div class="road vert" id="b74"></div> 
+        <div class="road vert" id="b75"></div>
+      </div>
+
+      <div class="track corner" id="fourthTurn">
+        <div class="road turn" id="b76"></div>
+        <div class="road turn" id="a78"></div>
+        <div class="road turn" id="b77"></div>
+        <div class="road turn" id="b78"></div>
+      </div>
+
+      <div class="track" id="p1LegFive">
+        <div class="road horz" id="a79"></div> 
+        <div class="road horz" id="a80"></div> 
+        <div class="road horz" id="a81"></div> 
+        <div class="road horz" id="a82"></div> 
+        <div class="road horz" id="a83"></div> 
+        <div class="road horz" id="a84"></div> 
+        <div class="road horz" id="a85"></div> 
+        <div class="road horz" id="a86"></div> 
+        <div class="road horz" id="a87"></div> 
+        <div class="road horz" id="a88"></div> 
+        <div class="road horz" id="a89"></div> 
+        <div class="road horz" id="a90"></div> 
+        <div class="road horz" id="a91"></div> 
+        <div class="road horz" id="a92"></div> 
+        <div class="road horz" id="a93"></div> 
+        <div class="road horz" id="a94"></div> 
+        <div class="road horz" id="a95"></div> 
+        <div class="road horz" id="a96"></div> 
+        <div class="road horz" id="a97"></div> 
+        <div class="road horz" id="a98"></div> 
+        <div class="road horz" id="a99"></div>
+        <div class="road horz" id="a100"></div> 
+        <div class="road horz" id="a101"></div> 
+        <div class="road horz" id="a102"></div> 
+        <div class="road horz" id="a103"></div> 
+        <div class="road horz" id="a104"></div> 
+        <div class="road horz" id="a105"></div> 
+        <div class="road horz" id="a106"></div> 
+        <div class="road horz" id="a107"></div> 
+        <div class="road horz" id="a108"></div> 
+        <div class="road horz" id="a109"></div> 
+        <div class="road horz" id="a110"></div> 
+        <div class="road finish" id="pOneFin"></div>
+      </div>
+
+      <div class="track" id="p2LegFive">
+        <div class="road horz" id="b79"></div> 
+        <div class="road horz" id="b80"></div> 
+        <div class="road horz" id="b81"></div> 
+        <div class="road horz" id="b82"></div> 
+        <div class="road horz" id="b83"></div> 
+        <div class="road horz" id="b84"></div> 
+        <div class="road horz" id="b85"></div> 
+        <div class="road horz" id="b86"></div> 
+        <div class="road horz" id="b87"></div> 
+        <div class="road horz" id="b88"></div> 
+        <div class="road horz" id="b89"></div> 
+        <div class="road horz" id="b90"></div> 
+        <div class="road horz" id="b91"></div> 
+        <div class="road horz" id="b92"></div> 
+        <div class="road horz" id="b93"></div> 
+        <div class="road horz" id="b94"></div> 
+        <div class="road horz" id="b95"></div> 
+        <div class="road horz" id="b96"></div> 
+        <div class="road horz" id="b97"></div> 
+        <div class="road horz" id="b98"></div> 
+        <div class="road horz" id="b99"></div>
+        <div class="road horz" id="b100"></div> 
+        <div class="road horz" id="b101"></div> 
+        <div class="road horz" id="b102"></div> 
+        <div class="road horz" id="b103"></div> 
+        <div class="road horz" id="b104"></div> 
+        <div class="road horz" id="b105"></div> 
+        <div class="road horz" id="b106"></div> 
+        <div class="road horz" id="b107"></div> 
+        <div class="road horz" id="b108"></div> 
+        <div class="road horz" id="b109"></div> 
+        <div class="road horz" id="b110"></div> 
+        <div class="road finish" id="pTwoFin"></div>
+      </div>
+
+    </div>
+  </div>
+  <div>
+    <p>This will all be under the track</p>
+  </div>
   <!-- Game Board Here -->
   <!-- Reset button -->
 </body>

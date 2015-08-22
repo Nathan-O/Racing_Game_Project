@@ -39,3 +39,45 @@ function Track() {
 // Start the game!
 var game = new Game();
 game.init();
+
+/*
+///////////////////////////////////////////////
+
+//////// notes
+
+  - toggle through class: Make a track that is 
+  multiple multipl small divs inside of a longer 
+  one. Use class to distinguish as road, and another 
+  class to indicate active div. use toggle() to chenge 
+  which div has the active class toggled on. This can be 
+  done with the following syntax: $('a' + i) and have i 
+  iterate therough a loop,
+
+
+
+
+///////////////////////////////////////////////////
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,1 +1,449 @@
 /* Style Sheet */
+
+
+
+body {
+	background-color: lightgrey;
+	margin: 4% auto;
+}
+
+.header {
+    margin-right: 8%;
+    margin-left:  8%;
+}
+.display {
+	width: 30%;
+    margin: 0px auto;
+    display: inline-block;
+    left: 47px;
+    top: -15px;
+    position: relative;
+}
+
+.title {
+	width: 30%;
+	display: inline-block;
+}
+
+h1 {
+	font-size: 80px;
+	margin-left: 60px;
+	text-align: center;
+	font-family: monospace;
+}
+
+h2 {
+	display: inline;
+}
+
+.score1 {
+	margin-left: 10px;
+}
+
+.score2 {
+	margin: 45px;
+}
+
+h4 {
+	text-align: center;
+	color: white;
+	z-index: 6;
+}
+
+
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+/* - Cheesey button, Hell yes! - */
+button {
+	display: inline;
+    margin: 0 auto;
+    position: relative;
+    visibility: hidden;
+
+
+}
+
+#killSwitch {
+	margin: 0 auto;
+    cursor: pointer;
+    left: 20px;
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 75%;
+    color: white;
+    visibility: visible;
+    background-color: rgba(18, 177, 18, 0.8)
+}
+
+#keepGoing {
+	margin: 0 auto;
+    cursor: pointer;
+    left: 70px;
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 75%;
+    color: white;
+    visibility: visible;
+    background-color: rgba(18, 177, 18, 0.8)
+}
+
+.outside {
+	border: 5px grey solid;
+	background-color: green;
+    height: 575px;
+    width: 870px;
+    z-index: 0;
+    border-radius: 15px; /* May change to 5px or 10px */
+    margin: 0px auto;
+    margin-top: 4%;
+    padding: 20px;
+}
+
+/*
+////////////////////////////////////
+
+ 	      Roads and Track 
+
+///////////////////////////////////
+*/
+
+.sector {
+	z-index: 1;
+	max-width: 835px;
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+    height: 280px;
+}
+
+.container {
+	width: 800px;
+	height: 900px;
+	margin: 0px auto;
+	padding: 15px;
+	border: 5px white dashed;
+}
+
+.gameboard {
+	height: 850px;
+	width: 750px;
+	background-color: rgba(0, 0, 0);
+	/* top-left | top-right | bottom-right | bottom-left */
+	border-radius: 10px 10px 10px 10px;
+	margin: auto;
+	padding: 15px;
+	border: 3px green solid;
+}
+
+.track {
+
+	border: 5px red dashed;
+	height: 30px;
+	width: 675px;
+
+}
+
+#p1LegOne {
+	border-bottom: 5px white dashed;
+	border-right: 0px;
+}
+
+#p1LegTwo {
+	width: 30px;
+    height: 110px;
+    float: right;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#p1LegThree {
+	float: right;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    width: 600px;
+}
+
+#p1LegFour {
+	width: 30px;
+    height: 110px;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-left: 35px;
+}
+
+#p1LegFive {
+	margin-left: 70px;
+	margin-top: -75px;
+    border-left: 0px;
+    border-bottom: 5px white dashed;
+}
+
+#p2LegOne {
+	border-top: 0px;
+	border-right: 0px;
+}
+
+#p2LegTwo {
+	width: 30px;
+    height: 110px;
+    float: right;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#p2LegThree {
+	float: right;
+	border-right: 0px;
+	border-left: 0px;
+    width: 600px;
+    margin-top: 110px;
+}
+
+#p2LegFour {
+	width: 30px;
+    height: 110px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    margin-top: -110px;
+}
+
+#p2LegFive {
+	margin-left: 70px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+.corner {
+	height: 65px;
+	width: 65px;
+	position: relative;
+	border: 5px blue dashed;
+}
+
+#firstTurn {
+	float: right;
+	margin-top: -75px;
+}
+
+#secondTurn {
+	float: right;
+    margin-top: 110px;
+    margin-right: -75px;
+}
+
+#thirdTurn {
+	margin-top: 110px;
+}
+
+#fourthTurn {
+
+}
+
+div.turn {
+	background-color: rgba(100, 50, 200, .25);
+	width: 30px;
+}
+
+.road {
+	background-color: rgba(0, 0, 0, .25);
+	height: 30px;
+	width: 15px;
+	z-index: 2;
+	display: inline-block;
+}
+
+.mid {
+	width: 16px;
+}
+
+.vert {
+	color: yellow;
+	width: 30px;
+	height: 25px;
+}
+
+#pOneStart {
+	width: 65px;
+}
+
+#pTwoStart {
+	width: 65px;
+}
+
+#pOneFin {
+	width: 65px;
+}
+
+#pTwoFin {
+	width: 65px;
+}
+
+.upper {
+	
+
+}
+
+.lower {
+	z-index: 4;
+}
+
+#p1Top {
+	border-bottom: 3px white dashed;
+}
+
+#p1Right {
+	z-index: 3;
+	width: 25px;
+    height: 116px;
+    float: right;
+    bottom: 28px;
+    border-left: 3px white dashed;
+}
+
+
+#p1Mid {
+	top: 85px;
+	left: 27px;
+	max-width: 808px;
+    border-top: 3px white dashed;
+}
+
+#p1Left {
+	z-index: 3;
+    width: 25px;
+    height: 80px;
+    left: 28px;
+    top: 60px;
+}
+
+#p1Fin {
+	top: -76px;
+    max-width: 808px;
+    left: 27px;
+    border-bottom: 3px white dashed;
+}
+
+#p2Top {
+	max-width: 807px;
+    top: 0px;
+    right: 0px;
+}
+
+#p2Right {
+	width: 25px;
+    height: 80px;
+    top: 0px;
+    float: right;
+    right: 0px;
+}
+
+#p2Mid {
+	top: 32px;
+    left: 0px;
+    max-width: 807px;
+}
+
+#p2Left {
+	width: 25px;
+    z-index: 4;
+    height: 119px;
+    top: -48px;
+    left: 0px;
+    border-right: 3px white dashed;
+}
+
+#p2Fin {
+	top: -76px;
+    left: 0px;
+    max-width: 836px;
+}
+
+/*
+////////////////////////////////
+
+			Avatars
+
+////////////////////////////////
+*/
+
+#guy1 {
+	position: absolute;
+	height: 20px;
+    width: 100px;
+    z-index: 6;
+    top: -17px;
+    left: -10px;
+}
+
+#guy2 {
+	position: absolute;
+	height: 20px;
+    width: 100px;
+    z-index: 6;
+    top: -17px;
+    left: -10px;
+}
+
+.avatar {
+	position: absolute;
+	z-index: 6;
+	height: 10px;
+	width: 10px;
+	left: 86px;
+	bottom: -15px;
+	border-radius: 90px;
+	border: 1px black solid;
+
+}
+
+#av1 {
+	z-index: 6;
+	background-color: orange;
+
+}
+
+#av2 {
+	background-color: pink;
+	z-index: 6;
+}
+
+
+
+
+
+
+/*
+///////////////////////////////////////////////////////////////////////////////
+
+////////// Notes
+
+    - Try to fix track layering.
+    - Fix positioning for track.
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+////////// Snippets
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+
+
+
+
+
+
+
