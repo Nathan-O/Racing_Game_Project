@@ -17,6 +17,7 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Hey, where's the jquery? -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </head>
 
@@ -29,14 +30,15 @@
   <div>
     <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
   </div>
-  
+
   <div class="container">
 
     <div class="gameboard">
 
       <div class="track" id="p1LegOne">
-        <div class="road start" id="pOneStart"></div>
-        <div class="road horz" id="a1"></div> 
+        <p class=nameOne> Nathan </p>
+        <div class="road start" id="playerOne-placeholder"></div>
+        <div class="road horz" id="av1-placeholder"></div> 
         <div class="road horz" id="a2"></div> 
         <div class="road horz" id="a3"></div> 
         <div class="road horz" id="a4"></div> 
@@ -71,7 +73,8 @@
       </div>
 
       <div class="track" id="p2LegOne">
-        <div class="road start" id="pTwoStart"></div>
+        <p class=nameTwo> Cheyenne </p>
+        <div class="road start" id="playerTwo-placeholder"></div>
         <div class="road horz" id="b1"></div> 
         <div class="road horz" id="b2"></div> 
         <div class="road horz" id="b3"></div> 
@@ -308,5 +311,37 @@
   <!-- Game Board Here -->
   <!-- Reset button -->
   <footer>Copywrite: Nathan Ockerman 2015</footer>
+
+    <script type="text/template" id="playerOne-template">
+        <div class="playerOne">
+            <div class="av1"></div>
+        </div>
+        
+    </script>
+
+    <script type="text/template" id="playerTwo-template">
+        <div class="playerTwo">
+            <div class="av2"></div>
+        </div>
+    </script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
