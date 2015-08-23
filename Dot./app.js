@@ -1,14 +1,83 @@
 // OOP Racing Game example boilerplate code
 
+/*
+$(document).ready(function(){
+  var playerOne = new Player(nameFirst, colorFirst);
 
-/*$(document).ready(function(){
+});
+*/
 
-});*/
+/////////////////////////////////////////////////////////////
+//// test
+/*
+var nameFirst;
+var nameSecond;
+var colorFirst;
+var colorSecond;
 
-function Player() {}/*function(name, color) {
-  this.name = name,
-  this.color = color, //set color with a CSS function that set background color to token div
-};*/
+function dotFade() {
+  for (var i = 0; i < 60; i++) {
+    $("#red").fadeIn(1000).fadeOut(1000).fadeIn(1000);
+    $("#orange").fadeIn(500).fadeOut(500).fadeIn(500);
+    $("#blue").fadeIn(1200).fadeOut(1200).fadeIn(1200);
+    $("#yellow").fadeIn(750).fadeOut(750).fadeIn(750);
+    $("#green").fadeIn(900).fadeOut(900).fadeIn(900);
+    $("#pink").fadeIn(2000).fadeOut(2000).fadeIn(2000)
+  }
+};    //to add more flashing dots
+//$("#div_id").fadeIn(1000).fadeOut(1000).fadeIn(1000)
+
+function makeNewPosition(){
+    var nX = Math.floor((Math.random() * 1000) + 1);
+    var nY = Math.floor((Math.random() * 1000) + 1);
+    return [nX,nY];     
+};
+
+function animateDiv(){
+    var gotoTeal = makeNewPosition();
+    var gotoPink = makeNewPosition();
+      var oldq = $('.bounce').offset();
+
+      $('.bounce#teal').animate({ top: gotoTeal[0], left: gotoTeal[1] }, 1000, function(){
+        animateDiv();        
+      });
+
+    $('.bounce#deeppink').animate({ top: gotoPink[0], left: gotoPink[1] }, 1500, function(){
+        animateDiv();        
+      });
+        // ^^ repeat syntax with new ID to add more
+          // also add a new goto variable for instances
+    
+};
+
+$(document).ready(function() {
+  $('#submitOne').on("click", function(){
+    alert("Click");
+    console.log($('#pOneName').val());
+    nameFirst = $('#pOneName').val();
+    colorFirst = $('#selectColorOne').val();
+    //return nameFirst;
+    playerOne = new Player(nameFirst, colorFirst);
+    //return playerOne;
+  });
+
+  $('#submitTwo').on("click", function(){
+    alert("Click");
+    nameSecond = $("#pTwoName").val();
+    colorSecond = $("#selectColorTwo").val();
+  }); 
+  
+  dotFade();
+  animateDiv();
+})*/
+
+////////////////////////////////////////////////////////
+//var playerOne;
+
+var Player = function(name, color) {
+  this.name = name;
+  this.color = color; //set color with a CSS function that set background color to token div
+};
 
 var setOne = 1;
 var setTwo = 2;

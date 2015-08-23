@@ -1,0 +1,98 @@
+body {
+	background-color: lightgrey;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-size: 100px;
+	font-family: monospace;
+	text-align: center;
+}
+
+.dotBar {
+	background-color: grey;
+}
+
+.dots {
+	height: 10px;
+	width: 10px;
+	border-radius: 90px;
+	border: 2px white solid;
+	display: inline-block;
+}
+
+.bounce {
+	position: absolute;
+	z-index: 6;
+}
+
+/*
+Other colors that can be used:
+
+-aquamarine
+-darkcyan
+-blueviolet
+-darkmagenta
+-deeppink
+-lime
+-skyblue
+-teal
+*/
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.teal {
+	background-color: teal;
+}
+
+.deeppink {
+	background-color: deeppink;
+}
+
+.aquamarine {
+	background-color: aquamarine;
+}
+
+.darkcyan {
+	background-color: darkcyan;
+}
+
+.blueviolet {
+	background-color: blueviolet;
+}
+
+.darkmagenta {
+	background-color: darkmagenta;
+}
+
+.lime {
+	background-color: lime;
+}
+
+.skyblue {
+	background-color: skyblue;
+}

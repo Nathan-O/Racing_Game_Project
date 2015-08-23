@@ -16,20 +16,60 @@
 
 		<link rel="stylesheet" href="intro.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="intro.js"></script>						
+		<script type="text/javascript" src="intro.js"></script>
+		<script type="text/javascript" src="app.js"></script>						
 	</head>
 
 	<body>
 		<header>
 			<h1> Dot. </h1>
+			<div class="dotBar">
+				<div class="dots flash red"></div>
+				<div class="dots flash orange"></div>
+				<div class="dots flash yellow"></div>
+				<div class="dots flash pink"></div>
+				<div class="dots flash green"></div>
+				<div class="dots flash blue"></div>
+			</div>
 		</header>
+		
 		<div>
-			<input type="text" id="pOmeName" required>
-			<input type="button" id="nameOne" value="Submit">
-		</div>	
+			<input type="text" id="pOneName" placeholder="Enter first player name." required>
+			<select id="selectColorOne">
+			  <option value="red">Red</option> 
+			  <option value="blue" selected>Blue</option>
+			  <option value="green">Green</option>
+			</select>
+			<input type="button" id="submitOne" value="Submit">
+		</div>
+
+		<div>	
+			<input type="text" id="pTwoName" placeholder="Enter second player name." required>
+			<select id="selectColorTwo">
+				<option value="pink">Pink</option>
+				<option value="orange">Orange</option>
+				<option value="yellow">Yellow</option>
+			</select>
+			<input type="button" id="submitTwo" value="Go!">
+		</div>
 		<!-- Content -->
+		
+		<a href="index.html"><button id="go">Play</button><a>
+		
 
 		<footer>
+			<div class="dots bounce yellow"></div>
+			<div class="dots bounce red"></div>
+			<div class="dots bounce deeppink"></div>
+			<div class="dots bounce orange"></div>
+			<div class="dots bounce green"></div>
+			<div class="dots bounce blue"></div>
+			<div class="dots bounce darkcyan"></div>
+			<div class="dots bounce blueviolet"></div>
+			<div class="dots bounce lime"></div>
+			<div class="dots bounce skyblue"></div>
+			<div class="dots bounce darkmagenta"></div>
+			<div class="dots bounce pink"></div>
 		</footer>
 	</body>
 
@@ -50,6 +90,7 @@
 	4. Start race button (can only be pressed after info is put in).
 	5. After asking 1 player or two, bleed form away and have nem put in forms.
 	6. give a number of color options through a dropdown list.
+	7. when button clicked change div html to just an <h1> that says thanks!
 
 
 
