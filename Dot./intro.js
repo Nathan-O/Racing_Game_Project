@@ -6,10 +6,24 @@
 
 //////////////////////////////////////////////////////////////////
 */
+$(document).ready(function() {
+	$('#nameOne').on("click", function(){
+		alert("Click");
+		var name = $('#pOneName').val();
+		//name = $(this).text();
+		console.log(name);
+		return name;
+	});	
+})
 
 
-
-
+// for setting the player name on the track. set something 
+// like this inside of the <p> tag:
+// ****** <label id="**id**"></label> ******
+// then use this function:
+// $("button-id").on("click", function() {
+// 	$('**id**').html($('input:text').val());
+// });						^//or text input #id
 
 
 /*
@@ -34,4 +48,7 @@
 //////////////////////////////////////////////////////////////////////////
 */
 
-//  Okay, so I’m trying to set a position for the player at the start of the race in my Player one constructor and i’m at my wits end. Is there a way to set the object (when created) inside of a specific HTML element? Is it even possible? (I’ve been poking around google with no luck). Also having trouble figuring out how to set the position of two players with only one player constructor.
+
+
+
+
