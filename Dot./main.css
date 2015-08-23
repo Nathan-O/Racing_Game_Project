@@ -4,11 +4,6 @@ body {
 	background-color: lightgrey;
 }
 
-.title {
-	width: 30%;
-	display: inline-block;
-}
-
 h1 {
 	font-size: 80px;
 	margin-top: 40px;
@@ -16,7 +11,7 @@ h1 {
 	text-align: center;
 	font-family: monospace;
 }
-
+/*
 h2 {
 	display: inline;
 }
@@ -41,7 +36,7 @@ h4 {
    background: #28597a;
    color: #ccc;
    }
-/* - Cheesey button, Hell yes! - */
+// - Cheesey button, Hell yes! - //
 button {
 	display: inline;
     margin: 0 auto;
@@ -78,7 +73,7 @@ button {
     visibility: visible;
     background-color: rgba(18, 177, 18, 0.8)
 }
-
+*/
 /*
 ////////////////////////////////////
 
@@ -111,7 +106,6 @@ button {
 	border: 5px grey solid;
 	height: 30px;
 	width: 675px;
-
 }
 
 #p1LegOne {
@@ -190,6 +184,9 @@ button {
     border-top: 0px;
 }
 
+/*
+////////////////////////////////////////
+*/
 .corner {
 	height: 65px;
 	width: 65px;
@@ -266,28 +263,6 @@ div.turn {
 	font-color: white;
 	z-index: 6;
 	color: grey;
-}
-#guy1 {
-	position: absolute;
-	height: 20px;
-    width: 100px;
-    z-index: 6;
-    top: -17px;
-    left: -10px;
-}
-
-#guy2 {
-	position: absolute;
-	height: 20px;
-    width: 100px;
-    z-index: 6;
-    top: -17px;
-    left: -10px;
-}
-
-.avatar {
-	
-
 }
 
 .av1 {

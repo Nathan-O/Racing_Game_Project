@@ -5,28 +5,6 @@
 
 });*/
 
-
-
-
-/*
-  //works!!
-function setPlayer(player){
-
-    var playerOneTemplate = _.template($('#playerOne-template').html());
-    var playerTwoTemplate = _.template($('#playerTwo-template').html());
-  
-    if (player === playerOne) {
-      var playerOneHtml = playerOneTemplate(player);
-      $("#playerOne-placeholder").append(playerOneHtml);
-    } else if (player === playerTwo) {
-      var playerTwoHtml = playerTwoTemplate(player);
-      $("#playerTwo-placeholder").append(playerTwoHtml);
-    } 
-  };
-*/
-
-
-
 function Player() {}/*function(name, color) {
   this.name = name,
   this.color = color, //set color with a CSS function that set background color to token div
@@ -36,8 +14,8 @@ var setOne = 1;
 var setTwo = 2;
 Player.prototype = {
   position: function(player){
-              console.log("Set player");
-              var player = player;
+              console.log("Set player");  // playerOne.position(setOne); - to set first player token
+              var player = player;        // playerTwo.position(setTwo); - to set second player token
               console.log(player);
               var playerOneTemplate = _.template($('#playerOne-template').html());
               var playerTwoTemplate = _.template($('#playerTwo-template').html());
@@ -95,7 +73,7 @@ var playerTwo = {
   name: "Cheyenne",
   color: "pink",
 }*/
-
+///////////////////////////////////
 
 
 
@@ -120,36 +98,6 @@ function Track() {
 game.init();*/
 
 /*
-var playerOneTemplate = _.template($('#playerOne-template').html());
-
-var playerTwoTemplate = _.template($('#playerTwo-template').html());
- */
-
-/*  //working set P1 function
-function setPlayer(player){
-   var playerOneHtml = playerOneTemplate(player);
-    $("#playerOne-placeholder").append(playerOneHtml);
-  };
-*/
-
-/*
-function setPlayer(player){
-  if (player === playerOne) {
-
-    var playerOneHtml = playerOneTemplate(player);
-    $("#playerOne-placeholder").append(playerOneHtml);
-
-  } else if (player === playerTwo) {
-
-    var playerTwoHtml = playerTwoTemplate(player);
-    $("#playerTwo-placeholder").append(playerTwoHtml);
-
-  } 
-};
-
-*/
-
-/*
 ///////////////////////////////////////////////
 
 //////// notes
@@ -168,44 +116,8 @@ function setPlayer(player){
 ///////////////////////////////////////////////////
 
 */
-/*
-$(function(){
-  
-  var playerOneTemplate = _.template($('#playerOne-template').html());
-  
-  //var octocats = data.octocats;
- 
-  function setPlayer(player){
-   
-    var playerOneHtml = playerOneTemplate(player);
-    
-    $("#playerOne-placeholder").append(playerOneHtml);
-  };
-
-
-
-
-});*/
-
-/*
-$(function(){
-  //create our octocat template
-  var octocatTemplate = _.template($('#octocat-template').html());
-  // data is defined in data.js
-  var octocats = data.octocats;
-  // get our template to give us an html string for each octocat
-  octocats.forEach(function(octocat){
-    // give our template some data and get html from it
-    var octocatHtml = octocatTemplate(octocat);
-    // append resulting html to the placeholder area
-    $("#octocats-placeholder").append(octocatHtml);
-  });
-});*/
-
 
 //$('#playerOne-placeholder').html("<div class='playerOne'><p class='playerOne'>" + playerOne.name + "</p></div>");
-
-
 
 /*set name - underscore
 set color - $().css
@@ -214,25 +126,7 @@ set position - l*/
 // A starter Player constructor.
 /*
 
-
-function Player(name, color ) {
-  this.name = name,
-  this.color = color, //set color with a CSS function that set background color to token div
-  
-
-};
-
-Player.prototype = {
-  position: function () {
-    $('
-  },
-}
-
-
 #playerOne-placeholder').html("<div class='playerOne'><p class='playerOne'>" + playerOne.name + "</p></div>");
-
-
-
 
 ////////////////////////////////////////
 function Shoe() = {
