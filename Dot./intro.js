@@ -7,24 +7,31 @@
 //////////////////////////////////////////////////////////////////
 */ 
 
-
-
 var nameFirst;
 var nameSecond;
 var colorFirst;
 var colorSecond;
 
+	//animation functions
 function dotFade() {
-	for (var i = 0; i < 60; i++) {
+	for (var i = 0; i < 100; i++) {
 		$(".flash.red").fadeIn(1000).fadeOut(1000).fadeIn(1000);
 		$(".flash.orange").fadeIn(500).fadeOut(500).fadeIn(500);
 		$(".flash.blue").fadeIn(1200).fadeOut(1200).fadeIn(1200);
 		$(".flash.yellow").fadeIn(750).fadeOut(750).fadeIn(750);
 		$(".flash.green").fadeIn(900).fadeOut(900).fadeIn(900);
-		$(".flash.pink").fadeIn(2000).fadeOut(2000).fadeIn(2000)
+		$(".flash.pink").fadeIn(2000).fadeOut(2000).fadeIn(2000);
+		$(".flash.deeppink").fadeIn(650).fadeOut(650).fadeIn(650);
+		$(".flash.darkmagenta").fadeIn(200).fadeOut(200).fadeIn(200);
+		$(".flash.darkcyan").fadeIn(800).fadeOut(800).fadeIn(800);
+		$(".flash.lime").fadeIn(400).fadeOut(400).fadeIn(400);
+		$(".flash.skyblue").fadeIn(700).fadeOut(700).fadeIn(700);
+		$(".flash.purple").fadeIn(900).fadeOut(900).fadeIn(900);
+		$(".flash.teal").fadeIn(450).fadeOut(450).fadeIn(450);
+		$(".flash.blueviolet").fadeIn(600).fadeOut(600).fadeIn(600);
+		$(".flash.aquamarine").fadeIn(500).fadeOut(500).fadeIn(500);
 	}
-};		//to add more flashing dots
-//$("#div_id").fadeIn(1000).fadeOut(1000).fadeIn(1000)
+};
 
 function makeNewPosition(){
     var nX = Math.floor((Math.random() * 1000) + 1);
@@ -109,80 +116,14 @@ function animateDiv(){
 	    $('.bounce.purple').animate({ top: gotoPurple[0], left: gotoPurple[1] }, 300, function(){
 	    	animateDiv();
 	    });
-    		// ^^ repeat syntax with new ID to add more
-    			// also add a new goto variable for instances
-    
 };
 
 //////////////////////////////////////////////////////////
 
 $(document).ready(function() {
-	/*$('#submitOne').on("click", function(){
-		alert("Click");
-		console.log($('#pOneName').val());
-		nameFirst = $('#pOneName').val();
-		colorFirst = $('#selectColorOne').val();
-
-	});
-
-	$('#submitTwo').on("click", function(){
-		alert("Click");
-		nameSecond = $("#pTwoName").val();
-		colorSecond = $("#selectColorTwo").val();
-	});*/
-
-	//var playerOne = new Player(nameFirst, colorFirst);
-		
 	dotFade();
 	animateDiv();
-})
-
-
-/*function calcSpeed(prev, next) {
-    
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
-    
-    var greatest = x > y ? x : y;
-    
-    var speedModifier = 0.1;
-
-    var speed = Math.ceil(greatest/speedModifier);
-
-    return speed;
-
-}*/
-
-// for setting the player name on the track. set something 
-// like this inside of the <p> tag:
-// ****** <label id="**id**"></label> ******
-// then use this function:
-// $("button-id").on("click", function() {
-// 	$('**id**').html($('input:text').val());
-// });						^//or text input #id
-
-
-/*
-///////////////////////////////////////////////////////////////////////////
-
-/////////// Notes
-
-- have an initial pop up that asks one player or two
-- if one player set one input feild, if two set two inputs (underscore)
-- have function to gather info from input and set it to value
-- have ability to set color
-
- 
-
-
-//////////////////////////////////////////////////////////////////////////
-
-////////// Snippets
-
-
-
-//////////////////////////////////////////////////////////////////////////
-*/
+});
 
 
 

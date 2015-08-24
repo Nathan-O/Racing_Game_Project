@@ -29,43 +29,19 @@
   <!-- HTML Body -->
   <h1>Dot.</h1>
 
-  <div>
-    <div>
-        <input type="text" id="pOneName" placeholder="Enter first player name." required>
-        <select id="selectColorOne" required>
-            <option value="null" selected>Pick Color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="purple">Purple</option>
-            <option value="teal">Teal</option>
-            <option value="deeppink">Pink</option>
-            <option value="aquamarine">Aquamarine</option>
-            <option value="lime">Lime Green</option>
-        </select>
-        <input type="button" id="submitOne" value="Submit" required>
+  <div class="header">
+    <div class="scoreboard">
+        <h2 class="score1"></h2>
     </div>
 
-    <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
+    <div class="buttonBox">
+        <a href="intro.html"><button id="killSwitch">Reset</button><a>
+        <br>
+        <button id="keepGoing">Play Again?</button>
+    </div>
 
-    <div>   
-        <input type="text" id="pTwoName" placeholder="Enter second player name." required>
-        <select id="selectColorTwo" required>
-            <option value='null' selected>Pick Color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="green">Green</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="purple">Purple</option>
-            <option value="teal">Teal</option>
-            <option value="deeppink">Pink</option>
-            <option value="aquamarine">Aquamarine</option>
-            <option value="lime">Lime Green</option>
-        </select>
-        <input type="button" id="submitTwo" value="Go!" required>
+    <div class="scoreboard">   
+        <h2 class="score2"></h2>
     </div>
 
   </div>
@@ -76,7 +52,7 @@
 
       <div class="track" id="p1LegOne">
         <p class=nameOne> </p>
-        <div class="road start" id="playerOne-placeholder"></div>
+        <div class="road start frstSrt" id="playerOne-placeholder"></div>
         <div class="road horz" id="av1-placeholder"></div> 
         <div class="road horz" id="a2"></div> 
         <div class="road horz" id="a3"></div> 
@@ -113,7 +89,7 @@
 
       <div class="track" id="p2LegOne">
         <p class=nameTwo> </p>
-        <div class="road start" id="playerTwo-placeholder"></div>
+        <div class="road start sndSrt" id="playerTwo-placeholder"></div>
         <div class="road horz" id="b1"></div> 
         <div class="road horz" id="b2"></div> 
         <div class="road horz" id="b3"></div> 
@@ -345,15 +321,63 @@
     </div>
   </div>
   <div>
-    <p>This will all be under the track</p>
+    <p>!</p>
   </div>
-  <div class="test">
-    <p>Does it work?</p>
-    <button id="testtest">Click</button>
+
+  <!-- Player input popup -->
+
+  <div class="playerInfo">
+
+    <div class="playInfoBox">
+        <h2 class="infoTitle">First Player</h2><br><br>
+
+        <input type="text" id="pOneName" placeholder="Enter first player name." required><br><br>
+
+        <select id="selectColorOne" required>
+            <option value="null" selected>Pick Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+            <option value="deeppink">Pink</option>
+            <option value="aquamarine">Aquamarine</option>
+            <option value="lime">Lime Green</option>
+        </select><br><br>
+
+        <input type="button" id="submitOne" value="Enter" required>
+
+    </div>
+
+    <div class="playInfoBox">
+        <h2 class="infoTitle">Second Player</h2><br><br>   
+        <input type="text" id="pTwoName" placeholder="Enter second player name." required><br><br>
+
+        <select id="selectColorTwo" required>
+            <option value='null' selected>Pick Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+            <option value="deeppink">Pink</option>
+            <option value="aquamarine">Aquamarine</option>
+            <option value="lime">Lime Green</option>
+        </select><br><br>
+
+        <input type="button" id="submitTwo" value="Enter" required>
+
+    </div>
+
+    <button id="playGame"><strong>Play</strong></button>
+
   </div>
-  <!-- Game Board Here -->
-  <!-- Reset button -->
-  <footer>Copyright: Nathan Ockerman 2015</footer>
+
+  <footer>Heck Yes! 2015</footer>
 
     <script type="text/template" id="playerOne-template">
         <div class="playerOne">

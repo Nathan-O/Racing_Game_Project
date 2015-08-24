@@ -7,9 +7,38 @@ header {
 }
 
 header h1 {
-	font-size: 100px;
+	font-size: 125px;
 	font-family: monospace;
 	text-align: center;
+}
+
+h2 {
+	font-family: monospace;
+}
+
+h3 {
+	font-family: monospace;
+}
+
+p {
+	font-family: monospace;
+}
+
+.text {
+	text-align: center;
+}
+
+#go {
+	height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 0px auto;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    margin-left: 460px;
+    margin-top: 25px;
 }
 
 .dotBar {
@@ -22,6 +51,11 @@ header h1 {
 	border-radius: 90px;
 	border: 2px white solid;
 	display: inline-block;
+}
+
+.flash {
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 .bounce {

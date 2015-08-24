@@ -1,92 +1,154 @@
 /* Style Sheet */
-.test {
+.playerInfo {
 	position: relative;
-	background-color: lime;
+	background-color: rgba(84, 156, 90, 1);;
 	height: 465px;
 	width: 765px;
 	border: 10px green solid;
 	margin: 0px auto;
 	z-index: 10;
 	border-radius: 10px;
-	/*left: 145px;*/
 	top: -555px;
+	text-align: center;
 }
 
+.playInfoBox {
+	width: 350px;
+    height: 210px;
+    display: inline-block;
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    border: 5px green solid;
+    border-radius: 20px;
+    background-color: lightgrey;
+    padding-top: 40px;
+
+}
+
+.infoTitle {
+	font-size: 20px;
+	font-family: monospace;
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+#pOneName {
+	width: 210px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: monospace;
+}
+
+#playGame {
+	cursor: pointer;
+	height: 50px;
+    width: 125px;
+    font-size: 25px;
+    font-family: monospace;
+    border-radius: 20px;
+    background-color: lightgrey;
+}
+
+#pTwoName {
+	width: 210px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    font-family: monospace;
+    border-radius: 20px;
+}
+
+/*
+///////////////////////////////////////// 
+*/
 
 body {
 	background-color: lightgrey;
 }
 
+footer {
+	text-align: center;
+}
+
 h1 {
-	font-size: 80px;
+	font-size: 100px;
 	margin-top: 40px;
 	margin-bottom: 30px;
 	text-align: center;
 	font-family: monospace;
 }
-/*
+
+.header {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.scoreboard {
+	display: inline-block;
+}
+
 h2 {
 	display: inline;
 }
 
 .score1 {
-	margin-left: 10px;
+	margin: 0px auto;
+	font-size: 30px;
+	font-family: monospace;
 }
 
 .score2 {
-	margin: 45px;
+	margin: 0px auto;
+	font-size: 30px;
+	font-family: monospace;
 }
 
-h4 {
-	text-align: center;
-	color: white;
-	z-index: 6;
+.buttonBox {
+	display: inline-block;
+	margin-right: 35px;
+	margin-left: 35px;
 }
 
-
-.button:hover {
-   border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
-   }
-// - Cheesey button, Hell yes! - //
-button {
-	display: inline;
-    margin: 0 auto;
-    position: relative;
-    visibility: hidden;
-
-
-}
-
+/*/ - Cheesey buttons, Hell yes! - /*/
 #killSwitch {
 	margin: 0 auto;
     cursor: pointer;
-    left: 20px;
-    position: relative;
-    top: 0px;
     height: 50px;
     width: 100px;
     border-radius: 75%;
     color: white;
-    visibility: visible;
-    background-color: rgba(18, 177, 18, 0.8)
+    background-color: green;
+    font-family: monospace;
+}
+
+#killswitch:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
 }
 
 #keepGoing {
 	margin: 0 auto;
     cursor: pointer;
-    left: 70px;
-    position: relative;
-    top: 0px;
     height: 50px;
     width: 100px;
     border-radius: 75%;
     color: white;
-    visibility: visible;
-    background-color: rgba(18, 177, 18, 0.8)
+    background-color: green;
+    font-family: monospace;
 }
-*/
+
+#keepgoing:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+
 /*
 ////////////////////////////////////
 
@@ -280,11 +342,8 @@ div.turn {
 
 .av1 {
 	z-index: 6;
-	/*position: absolute;*/
 	height: 10px;
 	width: 10px;
-	/*left: 86px;*/
-	/*bottom: -15px;*/
 	border-radius: 90px;
 	border: 2px white solid;
 	margin-top: 10px;
@@ -293,11 +352,8 @@ div.turn {
 
 .av2 {
 	z-index: 6;
-	/*position: absolute;*/
 	height: 10px;
 	width: 10px;
-	/*left: 86px;*/
-	/*bottom: -15px;*/
 	border-radius: 90px;
 	border: 2px white solid;
 	margin-top: 10px;
