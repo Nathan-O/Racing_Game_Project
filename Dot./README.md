@@ -1,6 +1,17 @@
 ##OOP Racing Game
 
+** How to play **
 
+Load - intro.html -, read the instuctions and hit play.
+
+Enter player one name and pick a color, hit enter.
+Enter plyer two name and pick a color, hit enter.
+
+click play
+
+Race!!
+
+Play again to keep current score, reset to start again at intro.
 
 
 ### Technologies Used
