@@ -70,9 +70,38 @@ $(document).ready(function() {
   dotFade();
   animateDiv();
 })*/
+$(document).ready(function () {
+  $('#submitOne').on("click", function(){
+    alert("Click");
+    console.log($('#pOneName').val());
+    nameFirst = $('#pOneName').val();
+    colorFirst = $('#selectColorOne').val();
+    playerOne = new Player(nameFirst, colorFirst);
+    playerOne.position(setOne);
+    playerOne.setNameToTrack(setOne);
+    playerOne.setColor(setOne);
+  });
+
+  $('#submitTwo').on("click", function(){
+    alert("Click");
+    nameSecond = $("#pTwoName").val();
+    colorSecond = $("#selectColorTwo").val();
+    playerTwo = new Player (nameSecond, colorSecond);
+    playerTwo.position(setTwo);
+    playerTwo.setNameToTrack(setTwo);
+    playerTwo.setColor(setTwo);
+  });
+
+  $("#testtest").on("click", function(){
+    $(".test").hide();
+  });
+
+})
+
 
 ////////////////////////////////////////////////////////
-//var playerOne;
+var playerOne;
+var playerTwo;
 
 var Player = function(name, color) {
   this.name = name;
@@ -97,6 +126,22 @@ Player.prototype = {
                 $("#playerTwo-placeholder").append(playerTwoHtml);
               }
             },
+  setColor: function(player){
+              if (player === 1) {
+                console.log(playerOne.color); //test class
+                $(".av1").addClass(playerOne.color);
+              } else if (player === 2) {
+                console.log(playerTwo.color);
+                $(".av2").addClass(playerTwo.color);
+              };
+            },
+  setNameToTrack: function(player){
+    if (player === 1) {
+      $(".nameOne").text(playerOne.name);
+    } else if (player === 2) {
+      $(".nameTwo").text(playerTwo.name);
+    }
+  }
   //next
   //next
   //next

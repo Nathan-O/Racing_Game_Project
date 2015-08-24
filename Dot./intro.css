@@ -29,18 +29,8 @@ header h1 {
 	z-index: 6;
 }
 
-/*
-Other colors that can be used:
+/*/////////////////////////////*/
 
--aquamarine
--darkcyan
--blueviolet
--darkmagenta
--deeppink
--lime
--skyblue
--teal
-*/
 .red {
 	background-color: red;
 }
@@ -95,4 +85,8 @@ Other colors that can be used:
 
 .skyblue {
 	background-color: skyblue;
+}
+
+.purple {
+	background-color: purple;
 }

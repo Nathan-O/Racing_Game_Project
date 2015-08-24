@@ -18,7 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Hey, where's the jquery? -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
-  <script type="text/javascript" src="intro.js"></script>
+  <!---<script type="text/javascript" src="intro.js"></script>-->
   <script type="text/javascript" src="app.js"></script> 
     
 </head>
@@ -30,7 +30,44 @@
   <h1>Dot.</h1>
 
   <div>
+    <div>
+        <input type="text" id="pOneName" placeholder="Enter first player name." required>
+        <select id="selectColorOne" required>
+            <option value="null" selected>Pick Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+            <option value="deeppink">Pink</option>
+            <option value="aquamarine">Aquamarine</option>
+            <option value="lime">Lime Green</option>
+        </select>
+        <input type="button" id="submitOne" value="Submit" required>
+    </div>
+
     <img src="http://www.cs.utah.edu/~gk/atwork/img/hevequip2.gif" alt="under construction"></img>
+
+    <div>   
+        <input type="text" id="pTwoName" placeholder="Enter second player name." required>
+        <select id="selectColorTwo" required>
+            <option value='null' selected>Pick Color</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="teal">Teal</option>
+            <option value="deeppink">Pink</option>
+            <option value="aquamarine">Aquamarine</option>
+            <option value="lime">Lime Green</option>
+        </select>
+        <input type="button" id="submitTwo" value="Go!" required>
+    </div>
+
   </div>
 
   <div class="container">
@@ -38,7 +75,7 @@
     <div class="gameboard">
 
       <div class="track" id="p1LegOne">
-        <p class=nameOne> Player 1 </p>
+        <p class=nameOne> </p>
         <div class="road start" id="playerOne-placeholder"></div>
         <div class="road horz" id="av1-placeholder"></div> 
         <div class="road horz" id="a2"></div> 
@@ -75,7 +112,7 @@
       </div>
 
       <div class="track" id="p2LegOne">
-        <p class=nameTwo> Player 2 </p>
+        <p class=nameTwo> </p>
         <div class="road start" id="playerTwo-placeholder"></div>
         <div class="road horz" id="b1"></div> 
         <div class="road horz" id="b2"></div> 
@@ -310,19 +347,23 @@
   <div>
     <p>This will all be under the track</p>
   </div>
+  <div class="test">
+    <p>Does it work?</p>
+    <button id="testtest">Click</button>
+  </div>
   <!-- Game Board Here -->
   <!-- Reset button -->
   <footer>Copyright: Nathan Ockerman 2015</footer>
 
     <script type="text/template" id="playerOne-template">
         <div class="playerOne">
-            <div class="av1"></div>
+            <div class="token av1"></div>
         </div>  
     </script>
 
     <script type="text/template" id="playerTwo-template">
         <div class="playerTwo">
-            <div class="av2"></div>
+            <div class="token av2"></div>
         </div>
     </script>
 

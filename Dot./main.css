@@ -1,4 +1,17 @@
 /* Style Sheet */
+.test {
+	position: relative;
+	background-color: lime;
+	height: 465px;
+	width: 765px;
+	border: 10px green solid;
+	margin: 0px auto;
+	z-index: 10;
+	border-radius: 10px;
+	/*left: 145px;*/
+	top: -555px;
+}
+
 
 body {
 	background-color: lightgrey;
@@ -267,7 +280,6 @@ div.turn {
 
 .av1 {
 	z-index: 6;
-	background-color: orange;
 	/*position: absolute;*/
 	height: 10px;
 	width: 10px;
@@ -280,7 +292,6 @@ div.turn {
 }
 
 .av2 {
-	background-color: pink;
 	z-index: 6;
 	/*position: absolute;*/
 	height: 10px;
@@ -311,7 +322,73 @@ div.turn {
     margin-top: 5px;
 }
 
+/*
+///////////////////////////////////////////////////
 
+				Color Classes
+
+///////////////////////////////////////////////////
+*/
+
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.teal {
+	background-color: teal;
+}
+
+.deeppink {
+	background-color: deeppink;
+}
+
+.aquamarine {
+	background-color: aquamarine;
+}
+
+.darkcyan {
+	background-color: darkcyan;
+}
+
+.blueviolet {
+	background-color: blueviolet;
+}
+
+.darkmagenta {
+	background-color: darkmagenta;
+}
+
+.lime {
+	background-color: lime;
+}
+
+.skyblue {
+	background-color: skyblue;
+}
+
+.purple {
+	background-color: purple;
+}
 
 
 
