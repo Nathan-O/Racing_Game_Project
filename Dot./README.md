@@ -38,3 +38,9 @@ Custom name and token color
 *What changes would you make to your project if you continued with it in the future?*
 
 A count down timer to start the race
+
+*****Questions
+
+As far as using Object Orientation, I tried a few different methods, and wasn't able to get the board or game initiation to work with an object constructor. It was lost on me.
+
+The other thing I struggled with was .toggle() to move the characters. It was suggeste that I try that but got it to work not at all, ended up going with a different method all together.
